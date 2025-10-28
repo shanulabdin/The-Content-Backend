@@ -67,7 +67,8 @@ nav{
     transform .2s ease,
     visibility 0.2s linear;
   z-index: 5;
-  
+  border-bottom: 1px solid #09151e31;
+  border-left: 1px solid #09151e31;
 }
 .innerNav.active{
   opacity: 1;
