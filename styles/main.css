@@ -1,0 +1,19 @@
+color pallete{
+  color: #09151e;
+  color: #617363;
+  color: #d3e134;
+}
+
+
+
+.video-wrap { 
+  max-width: 900px; 
+  margin: 0 auto; 
+}
+
+.video-wrap video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;   /* reserves space so you see the poster instead of a skinny bar */
+  display: block;
+}
