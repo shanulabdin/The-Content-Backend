@@ -1,0 +1,61 @@
+color pallete{
+  color: #09151e;
+  color: #617363;
+  color: #d3e134;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #09151e;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d3e134;
+}
+.outerNav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d3e134;
+}
+.rightSec{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo{
+  object-fit: cover;
+  height: 80px;
+  width: 160px;
+}
+.navIconCont{
+  cursor: pointer;
+}
+.navIcons{
+  color: #09151e;
+  margin: 16px;
+  height: 50px;
+  width: 30px;
+}
+.innerNav{
+  /* display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column; */
+
+  height: 100px;
+  position: relative;
+}
+.toggleNavLinks{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
