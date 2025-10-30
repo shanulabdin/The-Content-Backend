@@ -12,7 +12,7 @@ let player;
 // Called by the YT API when it’s ready
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    videoId: 'lOP8oyRWyg4', // your video ID
+    videoId: 'lOP8oyRWyg4', // video ID
     playerVars: {
       autoplay: 1,
       mute: 1,              // required for autoplay
