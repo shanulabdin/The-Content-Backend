@@ -27,52 +27,49 @@ section{
   
 }
 
-.video-wrap{
+.video-frame {
   margin: 20px 10px;
-  width: 90vw;
-  padding: 10px;
-
-    position: relative;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-    background: #000;
-}
-
-
-  #player, .video-wrap iframe {
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none; /* prevents clicks on the video itself */
-  }
-  .mute-toggle {
-    position: absolute;
-    right: 1rem; 
-    bottom: 1rem;
-    z-index: 10;
-    pointer-events: auto; /* clickable */
-    padding: .6rem .8rem;
-    border: none; 
-    border-radius: 999px;
-    background: rgba(255,255,255,.15);
-    color: #fff; 
-    backdrop-filter: blur(6px);
-    font-size: 1.1rem; 
-    cursor: pointer;
-  }
-  .mute-toggle:hover { 
-    background: rgba(255,255,255,.25);
-  }
-  /* @media (min-aspect-ratio: 16/9) {
-    #player, .video-wrap iframe {
-    }
-  } */
-
-.introVideo{
-  border-radius: 10px;
+  width: 100%;           /* not 100vw (avoids horizontal scrollbars) */
+  position: relative;
   aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+  border-radius: 10px;
+  padding: 0;             /* remove padding — it breaks the ratio */
 }
+#player, .video-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  pointer-events: none;
+}
+
+.mute-toggle {
+  position: absolute;
+  right: 1rem; 
+  bottom: 1rem;
+  z-index: 10;
+  pointer-events: auto; /* clickable */
+  padding: .6rem .8rem;
+  border: none; 
+  border-radius: 999px;
+  background: rgba(255,255,255,.15);
+  color: #fff; 
+  backdrop-filter: blur(6px);
+  font-size: 1.1rem; 
+  cursor: pointer;
+}
+.mute-toggle:hover { 
+  background: rgba(255,255,255,.25);
+}
+/* @media (min-aspect-ratio: 16/9) {
+  #player, .video-frame iframe {
+  }
+} */
+
 .headingBtnsContainer{
   display: flex;
   justify-content: center;
