@@ -36,17 +36,30 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-// Toggle mute/unmute from your custom button
-document.addEventListener('click', (e) => {
-  const btn = e.target.closest('.mute-toggle');
-  if (!btn || !player) return;
+
+// Assumes you created the YT player as `player` and it autoplays muted.
+const overlay = document.querySelector('.overlay-audio');
+const icon = overlay.querySelector('.icon');
+let hideTimer;
+
+overlay.addEventListener('click', () => {
+  if (!window.player) return;
+
+  // Toggle audio
   if (player.isMuted()) {
     player.unMute();
-    btn.setAttribute('aria-pressed', 'false');
-    btn.textContent = '🔈';
+    icon.innerHTML = '<ion-icon name="volume-high-outline"></ion-icon>';
+    overlay.setAttribute('aria-pressed', 'false');
   } else {
     player.mute();
-    btn.setAttribute('aria-pressed', 'true');
-    btn.textContent = '🔇';
+    icon.innerHTML = '<ion-icon name="volume-mute-outline"></ion-icon>';
+    overlay.setAttribute('aria-pressed', 'true');
   }
+
+  // Show emoji then hide after 1s
+  icon.style.opacity = '1';
+  clearTimeout(hideTimer);
+  hideTimer = setTimeout(() => {
+    icon.style.opacity = '0';
+  }, 1000);
 });
