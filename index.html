@@ -42,20 +42,22 @@
   </header>
 
   <main>
-    <section class="home-section">
+    <section id="home-section">
       <div class="headingText">
-        <h2>Cinematic Video Editing for Brands & Creators</h2>
+        <h2>I Do Cinematic Video Editing for Brands & Creators</h2>
         <p>Elevate your story. Increase engagement. Impress audiences.</p>
       </div>
 
       <div class="video-wrap">
-        <iframe 
-        class="introVideo"
-        src="https://www.youtube.com/embed/lOP8oyRWyg4?si=IpwY4fbCKRvvqHW8" 
-        title="YouTube video player" 
-        controls="0"
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div id="player"></div>
+
+        <!-- Your custom sound toggle -->
+        <button class="mute-toggle" aria-pressed="true" aria-label="Unmute video">🔇</button>
+      </div>
+
+
+
+
       </div>
 
       <div class="headingBtnsContainer">
@@ -64,10 +66,10 @@
     </section>
 
 
-    <section id="clients-section">
-
+    <section id="portfolio-section">
+      <h2>Portfolio</h2>
     </section>
-    
+
     <section id="clients-section">
 
     </section>
@@ -91,5 +93,8 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="scripts/script.js"></script>
+
+  <!-- YouTube Iframe API -->
+  <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>
