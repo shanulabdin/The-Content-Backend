@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 section{
   display: flex;
   justify-content: center;
