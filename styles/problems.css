@@ -17,3 +17,14 @@
   margin-bottom: 20px;
   margin-top: 10px;
 }
+.problems-text h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.problem-icon{
+  color: red;
+  margin: 0px 10px;
+  font-size: 30px;
+  
+}
