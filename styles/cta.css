@@ -51,3 +51,6 @@
 .cta-btn:active { 
   transform: translateY(-1px); 
 }
+@media (prefers-reduced-motion: reduce) {
+  .cta-btn { transition: none; }
+}
