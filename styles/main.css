@@ -1,11 +1,19 @@
 .headingText{
-  color: #d3e134;
   width: 80vw;
 }
 
-.headingText p{
+.headingText h2{
   color: #ffffff;
-  
+}
+.headingText h1{
+  color: #d3e134;
+}
+.main-para-container{
+  margin: 10px 10px;
+}
+.main-para-container p{
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .video-frame {
