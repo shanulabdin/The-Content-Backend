@@ -1,0 +1,14 @@
+.strategy-text{
+  color: white;
+  text-align: start;
+  font-size: 18px;
+}
+.strategy-text ol{
+  margin: 10px 10px;
+}
+.strategy-text li{
+  margin: 4px 4px;
+}
+.strategy-text li::marker{
+  color: #d3e134;
+}
