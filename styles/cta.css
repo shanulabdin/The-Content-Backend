@@ -1,0 +1,44 @@
+.cta-section {
+  padding: 72px 20px;
+  text-align: center;
+  background: #0f1115;
+  color: #fff;
+  border-radius: 16px;
+}
+
+.cta-inner {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.cta-inner h2 {
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 22px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 10px;
+  background: #d3e134;
+  color: #0f1115;
+  box-shadow: 0 8px 24px rgba(211,225,52,0.35);
+  transition: transform .15s ease, box-shadow .15s ease;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: #d3e134;
+  color: #09151e;
+  border: none;
+  border-radius: 4px 4px;
+  margin: 0px 10px;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(211,225,52,0.45);
+}
