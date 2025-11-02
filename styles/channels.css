@@ -1,28 +1,21 @@
 .channels-section{
-
-
   overflow-x: auto;
 }
-.channel-carousel{
-  
-}
-.channels{
+
+.channels-group{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  
 }
 .channel-tooltip{
   margin: 20px 10px;
   color: white;
   background-color: rgb(30, 30, 30);
-  box-shadow: 0px 0px 8px 5px rgb(0, 0, 0);
+  /* box-shadow: 0px 0px 8px 5px rgb(0, 0, 0); */
 
   padding: 15px 15px;
   border-radius: 10px;
   width: 170px;
-  height: 150px;
 
   display: flex;
   flex-direction: column;
@@ -30,7 +23,6 @@
   align-items: center;
 
   font-size: 15px;
-  
 }
 
 .channel-pfp{
@@ -40,7 +32,23 @@
   border-radius: 99px;
 }
 
-.channel-info-container{
 
+/* Infinite animation carousel */
+.channel-carousel{
+  margin: 10px auto;
+  width: 90%;
+  display: flex;
+  overflow-x: auto;
 }
-
+.channel-carousel::-webkit-scrollbar{
+  display: none;
+}
+.channels-group{
+  gap: 1em;
+  animation: spin 10s infinite linear;
+  padding-right: 1em;
+}
+@keyframes spin {
+  from {translate: 0;}
+  to {translate: -100%;}
+}
