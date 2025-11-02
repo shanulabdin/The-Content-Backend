@@ -14,17 +14,18 @@
 .main-para-container p{
   color: #ffffff;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .video-frame {
   margin: 20px 10px;
-  width: 100%;           /* not 100vw (avoids horizontal scrollbars) */
+  width: 100%;  
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: #000;
   border-radius: 10px;
-  padding: 0;             /* remove padding — it breaks the ratio */
+  padding: 0; 
 
   display: flex;
   justify-content: center;

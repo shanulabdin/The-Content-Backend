@@ -18,7 +18,6 @@
 .cta-btn {
   display: inline-block;
   padding: 14px 22px;
-  font-weight: 700;
   text-decoration: none;
   border-radius: 10px;
   background: #d3e134;
@@ -28,7 +27,7 @@
 
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 20px;
   cursor: pointer;
   padding: 10px 15px;
   background-color: #d3e134;
