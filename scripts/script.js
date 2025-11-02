@@ -1,9 +1,9 @@
-const menuBtn = document.querySelector('.menuBtn');
-const innerNav = document.querySelector('.innerNav');
+// const menuBtn = document.querySelector('.menuBtn');
+// const innerNav = document.querySelector('.innerNav');
 
-menuBtn.addEventListener('click', () => {
-  innerNav.classList.toggle('active');
-})
+// menuBtn.addEventListener('click', () => {
+//   innerNav.classList.toggle('active');
+// })
 
 
 // intro video 
@@ -43,11 +43,11 @@ const icon = overlay.querySelector('.icon');
 let hideTimer;
 
 overlay.addEventListener('click', () => {
-  if (!window.player) return;
+  if (!player) return;        // <-- was window.player
 
-  // Toggle audio
   if (player.isMuted()) {
     player.unMute();
+    player.playVideo();       // Safari/iOS: ensure audio starts
     icon.innerHTML = '<ion-icon name="volume-high-outline"></ion-icon>';
     overlay.setAttribute('aria-pressed', 'false');
   } else {
@@ -56,10 +56,7 @@ overlay.addEventListener('click', () => {
     overlay.setAttribute('aria-pressed', 'true');
   }
 
-  // Show emoji then hide after 1s
   icon.style.opacity = '1';
   clearTimeout(hideTimer);
-  hideTimer = setTimeout(() => {
-    icon.style.opacity = '0';
-  }, 1000);
+  hideTimer = setTimeout(() => (icon.style.opacity = '0'), 1000);
 });
