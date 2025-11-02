@@ -1,5 +1,6 @@
 .channels-section{
   overflow-x: auto;
+  padding: 0;
 }
 
 .channels-group{
