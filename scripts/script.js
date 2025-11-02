@@ -12,7 +12,7 @@ let player;
 // Called by the YT API when it’s ready
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    videoId: 'lOP8oyRWyg4', // video ID
+    videoId: 'fbo6ikGnIUQ', // video ID
     playerVars: {
       autoplay: 1,
       mute: 1,              // required for autoplay
@@ -21,7 +21,7 @@ function onYouTubeIframeAPIReady() {
       rel: 0,               // related videos from same channel
       playsinline: 1,
       loop: 1,
-      playlist: 'lOP8oyRWyg4',
+      playlist: 'fbo6ikGnIUQ',
       fs: 0,                // no fullscreen button
       cc_load_policy: 0,
       iv_load_policy: 3,    // hide annotations
