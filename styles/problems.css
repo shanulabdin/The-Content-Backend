@@ -1,0 +1,19 @@
+.problems-text{
+  display: flex; 
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  color: white;
+  text-align: start;
+  margin: 20px 10px;
+}
+.problem-heading{
+  color: #ffffff;
+  text-decoration: underline 5px #d3e134;
+  text-underline-offset: 4px;
+}
+.problem-para{
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
