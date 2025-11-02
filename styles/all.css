@@ -34,3 +34,12 @@ h2{
   align-items: center;
   justify-content: center;
 }
+.sectionHeading{
+  color: #d3e134;
+}
+.headings{
+  font-style: italic;
+  text-decoration: underline 4px #d3e134;
+  text-underline-offset: 4px;
+  margin-bottom: 10px;
+}

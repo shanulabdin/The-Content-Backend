@@ -1,11 +1,3 @@
-.sectionHeading{
-  color: #d3e134;
-}
-.headings{
-  font-style: italic;
-  text-decoration: underline 4px #d3e134;
-  text-underline-offset: 4px;
-}
 .card{
   color: black;
   background-color: #fff;
