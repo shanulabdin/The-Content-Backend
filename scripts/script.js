@@ -70,7 +70,7 @@ window.addEventListener('load', function () {
       e.preventDefault();
       if (window.Calendly?.initPopupWidget){
         Calendly.initPopupWidget({
-          url: 'https://calendly.com/muhammadshanulabedeen'
+          url: 'https://calendly.com/shanulabdin'
         });
       }
     });
