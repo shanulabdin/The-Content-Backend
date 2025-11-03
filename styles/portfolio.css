@@ -3,6 +3,7 @@
   display: grid;
 }
 .portfolio-video{
+  border: 1px solid #d3e134;
   width: 90%;
   height: auto;
   aspect-ratio: 16 / 9;
@@ -15,7 +16,7 @@
   align-items: center;
   color: #d3e134;
   margin: 3px 10px 60px 10px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
 
 }
@@ -48,12 +49,22 @@
   font-weight: 600;
   font-size: 20px;
 }
-
+.videos-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
 @media (min-width: 700px) {
+  .videos-container{
+    grid-template-columns: 1fr 1fr;
+  }
   .video-stats{
-    font-size: 30px;
+    font-size: 20px;
   }
-  .video-stats p{
-    margin: 0px 15px;
+}
+@media (min-width: 1200px) {
+  .videos-container{
+    grid-template-columns: 1fr 1fr 1fr;
   }
+
 }

@@ -19,12 +19,25 @@
 }
 .problems-text h3 {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 .problem-icon{
   color: red;
   margin: 0px 10px;
   font-size: 30px;
-  
+}
+.problem-container{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+@media (min-width: 700px){
+  .problems-text{
+    font-size: 20px;
+  }
+  .problem-icon{
+    font-size: 35px;
+  }
 }
