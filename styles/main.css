@@ -70,7 +70,7 @@
     transition: none; 
   }
 }
-@media (min-width: 700px) and (max-width: 1200px) {
+@media (min-width: 700px) {
   .video-frame {
     width: 80%;
     margin: 20px 40px;
