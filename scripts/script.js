@@ -60,3 +60,18 @@ overlay.addEventListener('click', () => {
   clearTimeout(hideTimer);
   hideTimer = setTimeout(() => (icon.style.opacity = '0'), 1000);
 });
+
+
+// Calendly badge widget
+window.addEventListener('load', function () {
+  var btn = document.getElementById('scheduleBtn');
+  btn.addEventListener('click', function () {
+    // Make sure Calendly has loaded (script is async)
+    if (window.Calendly && window.Calendly.initPopupWidget) {
+      Calendly.initPopupWidget({
+        url: 'https://calendly.com/muhammadshanulabedeen'
+      });
+    }
+    return false;
+  });
+});

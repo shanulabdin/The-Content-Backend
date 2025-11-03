@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="styles/strategy.css">
   <link rel="stylesheet" href="styles/cta.css">
 
+  <!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <title>The Content Backend</title>
 </head>
 <body>
@@ -75,7 +78,7 @@
         </p>
       </div>
       <div class="headingBtnsContainer">
-        <button class="cta-btn">Book Intro Call</button>
+        <button class="cta-btn" id="scheduleBtn">Book Intro Call</button>
       </div>
     </section>
 
@@ -322,15 +325,15 @@
       <div class="pills">
         <div class="pill">
           <ion-icon class="pill-icon" name="eye-outline"></ion-icon>
-          <p>50M views served</p>
+          <p>50M Views Served</p>
         </div>
         <div class="pill">
-          <ion-icon class="pill-icon" name="analytics-outline"></ion-icon>
-          <p>46% viewer retention</p>
+          <ion-icon class="pill-icon" name="cash-outline"></ion-icon>
+          <p>$100k Revenue generated</p>
         </div>
         <div class="pill">
           <ion-icon class="pill-icon" name="trending-up-outline"></ion-icon>
-          <p>20% click-through rate</p>
+          <p>20% Click-Through Rate</p>
         </div>
       </div> 
     </section>
@@ -417,7 +420,7 @@
         </p>
       </div>
       <div class="headingBtnsContainer">  
-        <button class="cta-btn">Lets Fix Them</button>
+        <button class="cta-btn" id="scheduleBtn">Lets Fix Them</button>
       </div>
     </section>
 
@@ -459,7 +462,7 @@
         </div>
       </div>
       <div class="headingBtnsContainer">  
-        <button class="cta-btn">Lets Plan</button>
+        <button class="cta-btn" id="scheduleBtn">Lets Plan</button>
       </div>
     </section>
 
@@ -482,12 +485,14 @@
     <section id="cta-section">
       <div class="cta-inner">
         <h2 class="sectionHeading">You focus on filming!<br>I'll handle the edit.</h2>
-        <a class="cta-btn">Book a Call</a>
+        <button class="cta-btn" id="scheduleBtn">Book a Call</button>
       </div>
     </section>
   </main>
 
   <footer>
+<!-- Calendly badge widget -->
+
 
   </footer>
 
