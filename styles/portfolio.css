@@ -1,9 +1,6 @@
 .portfolio-video-container{
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+  display: grid;
 }
 .portfolio-video{
   width: 90%;
@@ -16,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #d3e134;
   margin: 3px 10px 60px 10px;
   font-size: 20px;
   font-weight: 700;
@@ -50,4 +47,13 @@
 .pills p{
   font-weight: 600;
   font-size: 20px;
+}
+
+@media (min-width: 700px) {
+  .video-stats{
+    font-size: 30px;
+  }
+  .video-stats p{
+    margin: 0px 15px;
+  }
 }
