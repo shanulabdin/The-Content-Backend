@@ -39,4 +39,7 @@ h2{
   .sectionHeading{
     font-size: 35px;
   }
+  section{
+    margin: 30px 10px 120px 0px;
+  }
 }

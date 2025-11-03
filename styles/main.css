@@ -20,6 +20,7 @@
 .video-frame {
   margin: 20px 10px;
   width: 100%;  
+  max-width: 800px;
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
