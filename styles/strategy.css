@@ -12,3 +12,10 @@
 .strategy-text li::marker{
   color: #d3e134;
 }
+@media (min-width: 700px){
+  .strategy-text{
+    color: white;
+    text-align: start;
+    font-size: 24px;
+  }
+}
