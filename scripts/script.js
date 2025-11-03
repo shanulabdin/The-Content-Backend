@@ -64,14 +64,15 @@ overlay.addEventListener('click', () => {
 
 // Calendly badge widget
 window.addEventListener('load', function () {
-  var btn = document.getElementById('scheduleBtn');
-  btn.addEventListener('click', function () {
-    // Make sure Calendly has loaded (script is async)
-    if (window.Calendly && window.Calendly.initPopupWidget) {
-      Calendly.initPopupWidget({
-        url: 'https://calendly.com/muhammadshanulabedeen'
-      });
-    }
-    return false;
+  var btns = this.document.querySelectorAll('.scheduleBtn');
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (window.Calendly?.initPopupWidget){
+        Calendly.initPopupWidget({
+          url: 'https://calendly.com/muhammadshanulabedeen'
+        });
+      }
+    });
   });
 });
