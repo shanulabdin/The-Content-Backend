@@ -70,3 +70,16 @@
     transition: none; 
   }
 }
+@media (min-width: 700px) and (max-width: 1200px) {
+  .video-frame {
+    width: 80%;
+    margin: 20px 40px;
+  }
+  .main-para-container{
+    margin: 10px 70px;
+  }
+  .main-para-container p{
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
