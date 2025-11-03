@@ -1,9 +1,17 @@
+.solution-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .solution-card{
   border: 2px solid #d3e134;
   border-radius: 10px;
   padding: 20px 20px;
   margin: 10px 30px;
   box-shadow: 0px 0px 5px black;
+  max-width: 420px;
+  height: 300px;
 }
 .solutions-text{
   display: flex; 
@@ -25,4 +33,12 @@
   font-size: 50px;
   margin: 10px 10px;
   color: #d3e134;
+}
+@media (min-width: 980px){
+  .solutions-text{
+    font-size: 18px;
+  }
+  .solution-icon{
+    font-size: 70px;
+  }
 }
