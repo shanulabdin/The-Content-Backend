@@ -1,5 +1,8 @@
-.protfolio-section .sectionHeading{
+.portfolio-heading{
   font-style: italic;
+  color: #d3e134;
+  width: 80vw;
+  font-size: 3vw;
 }
 .portfolio-video-container{
   width: 100%;
@@ -74,5 +77,9 @@
   .videos-container{
     grid-template-columns: 1fr 1fr 1fr;
   }
-
+}
+@media (max-width: 700px) {
+  .portfolio-heading{
+    font-size: 25px;
+  }
 }
