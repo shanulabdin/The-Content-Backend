@@ -1,3 +1,8 @@
+.solution-grp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .solution-cards{
   display: flex;
   justify-content: center;
@@ -33,6 +38,27 @@
   font-size: 50px;
   margin: 10px 10px;
   color: #d3e134;
+}
+.solution-grp{
+  display: flex;
+  flex-direction: column;
+}
+.solution-cards{
+  flex: 1;
+}
+.speaker-pic-container{
+  flex: 1;
+}
+/* .speaker-pic-container{
+  width: 200px;
+  height: 400px;
+} */
+.speaker-pic{
+  width: 270px;
+  height: 400px;
+  flex: 1;
+  aspect-ratio: 27/40;
+  object-fit: cover;
 }
 @media (min-width: 980px){
   .solutions-text{
