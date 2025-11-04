@@ -1,16 +1,16 @@
-.strategy-text{
+.strategy-text-2{
   color: white;
   text-align: start;
   font-size: 18px;
   margin-bottom: 30px;
 }
-.strategy-text .list-container{
+.strategy-text-2 .list-container{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-.strategy-text .list-number{
+.strategy-text-2 .list-number{
   margin: 0px 6px;
   color: #d3e134;
 }
@@ -19,7 +19,7 @@
   height: auto;
 }
 
-.strategy-text{
+.strategy-text-2{
   display: grid;
   grid-template-columns: 1fr 0.1fr 1fr;
   width: 80vw;
@@ -43,23 +43,39 @@
   align-content: center;
   justify-content: center;
 }
+
+.strategy-text-1{
+  text-align: left;
+  margin: 10px 10px 40px 10px;
+}
+.strategy-text-1 ol{
+  font-size: 18px;
+  color: white;
+}
+.strategy-text-1 ol li::marker{
+  color: #d3e134;
+}
 @media (min-width: 700px){
-  .strategy-text{
+  .strategy-text-2{
     color: white;
     text-align: start;
     font-size: 24px;
   }
 }
+
+@media (min-width: 700px){
+  .strategy-text-1{
+    display: none;
+  }
+
+}
 @media (max-width: 700px){
-  .strategy-text{
+  .strategy-text-2{
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
-    
     height: auto;
-  }
-  .arrow-img{
     display: none;
   }
   .arrow-grp1{
@@ -70,7 +86,7 @@
   }
 }
 @media (min-width: 1100px){
-  .strategy-text{
+  .strategy-text-2{
     font-size: 30px;
   }
   .arrow-png{
