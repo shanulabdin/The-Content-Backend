@@ -40,6 +40,11 @@
   width: 100%;
   display: flex;
   overflow-x: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }
 .channel-carousel::-webkit-scrollbar{
   display: none;

@@ -100,16 +100,23 @@
   width: 100%;
   display: flex;
   overflow-x: auto;
+  pointer-events: none;
 }
 .cards::-webkit-scrollbar{
   display: none;
 }
 .card-grp{
   gap: 1em;
-  animation: spin 50s infinite linear;
+  animation: carousel 60s infinite linear;
   padding-left: 1em;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
 }
-@keyframes spin {
+@keyframes carousel {
   from {translate: 0;}
   to {translate: 100%;}
 }

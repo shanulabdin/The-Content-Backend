@@ -33,6 +33,10 @@
   flex-direction: column;
   max-width: 600px;
 }
+.problem-grp .problems-pic{
+  width: 80vw;
+
+}
 @media (min-width: 700px){
   .problems-text{
     font-size: 20px;
