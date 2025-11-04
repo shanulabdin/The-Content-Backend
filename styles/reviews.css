@@ -114,7 +114,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
 }
 @keyframes carousel {
   from {translate: 0;}
