@@ -6,7 +6,7 @@
   margin: 10px;
   padding: 20px 20px;
   max-width: 400px;
-  min-width: 300px;
+  min-width: 350px;
 
   display: flex;
   justify-content: center;
@@ -88,12 +88,3 @@
   from {translate: 0;}
   to {translate: 100%;}
 }
-
-/* @media (min-width: 850px){
-  .cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-  }
-} */
-
