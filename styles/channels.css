@@ -49,7 +49,7 @@
 }
 .channels-group{
   gap: 1em;
-  animation: spin 10s infinite linear;
+  animation: spin 15s infinite linear;
   padding-right: 1em;
 }
 @keyframes spin {
