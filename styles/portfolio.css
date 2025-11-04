@@ -1,3 +1,6 @@
+.protfolio-section .sectionHeading{
+  font-style: italic;
+}
 .portfolio-video-container{
   width: 100%;
   display: grid;
@@ -51,6 +54,7 @@
 .pills p{
   font-weight: 600;
   font-size: 20px;
+  margin-right: 6px;
 }
 .videos-container{
   width: 100%;
