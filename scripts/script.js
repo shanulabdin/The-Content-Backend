@@ -63,16 +63,16 @@ overlay.addEventListener('click', () => {
 
 
 // Calendly badge widget
-window.addEventListener('load', function () {
-  var btns = this.document.querySelectorAll('.scheduleBtn');
-  btns.forEach(function (btn) {
-    btn.addEventListener('click', function (e) {
-      e.preventDefault();
-      if (window.Calendly?.initPopupWidget){
-        Calendly.initPopupWidget({
-          url: 'https://calendly.com/shanulabdin'
-        });
-      }
-    });
-  });
-});
+// window.addEventListener('load', function () {
+//   var btns = this.document.querySelectorAll('.scheduleBtn');
+//   btns.forEach(function (btn) {
+//     btn.addEventListener('click', function (e) {
+//       e.preventDefault();
+//       if (window.Calendly?.initPopupWidget){
+//         Calendly.initPopupWidget({
+//           url: 'https://calendly.com/shanulabdin'
+//         });
+//       }
+//     });
+//   });
+// });
