@@ -1,11 +1,3 @@
-// const menuBtn = document.querySelector('.menuBtn');
-// const innerNav = document.querySelector('.innerNav');
-
-// menuBtn.addEventListener('click', () => {
-//   innerNav.classList.toggle('active');
-// })
-
-
 // intro video 
 let player;
 
@@ -36,14 +28,12 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-
-// Assumes you created the YT player as `player` and it autoplays muted.
 const overlay = document.querySelector('.overlay-audio');
 const icon = overlay.querySelector('.icon');
 let hideTimer;
 
 overlay.addEventListener('click', () => {
-  if (!player) return;        // <-- was window.player
+  if (!player) return;        
 
   if (player.isMuted()) {
     player.unMute();
@@ -60,19 +50,3 @@ overlay.addEventListener('click', () => {
   clearTimeout(hideTimer);
   hideTimer = setTimeout(() => (icon.style.opacity = '0'), 1000);
 });
-
-
-// Calendly badge widget
-// window.addEventListener('load', function () {
-//   var btns = this.document.querySelectorAll('.scheduleBtn');
-//   btns.forEach(function (btn) {
-//     btn.addEventListener('click', function (e) {
-//       e.preventDefault();
-//       if (window.Calendly?.initPopupWidget){
-//         Calendly.initPopupWidget({
-//           url: 'https://calendly.com/shanulabdin'
-//         });
-//       }
-//     });
-//   });
-// });
