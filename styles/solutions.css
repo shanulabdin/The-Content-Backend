@@ -49,10 +49,6 @@
 .speaker-pic-container{
   flex: 1;
 }
-/* .speaker-pic-container{
-  width: 200px;
-  height: 400px;
-} */
 .speaker-pic{
   width: 270px;
   height: 400px;
