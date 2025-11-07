@@ -5,16 +5,13 @@
   color: #fff;
   border-radius: 16px;
 }
-
 .cta-inner {
   max-width: 840px;
   margin: 0 auto;
 }
-
 .cta-inner h2 {
   margin-bottom: 20px;
 }
-
 .cta-btn {
   display: inline-block;
   padding: 14px 22px;
@@ -23,7 +20,6 @@
   background: #666666;
   color: #0f1115;
   box-shadow: 0 8px 24px rgba(211,225,52,0.35);
-  
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -34,14 +30,12 @@
   color: #d3e134;
   border-radius: 4px 4px;
   margin: 0px 10px;
-
   transition:
     transform 150ms ease,
     box-shadow 150ms ease,
     background-color 200ms ease,
     color 200ms ease;
 }
-
 .cta-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 30px rgba(211,225,52,0.45);

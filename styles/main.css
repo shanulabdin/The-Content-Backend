@@ -19,7 +19,6 @@
   font-size: 20px;
   margin-bottom: 20px;
 }
-
 .video-frame {
   margin: 20px 10px;
   width: 100%;  
@@ -30,11 +29,9 @@
   background: #000;
   border-radius: 10px;
   padding: 0; 
-
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 #player, .video-frame iframe {
   position: absolute;
@@ -43,7 +40,6 @@
   height: 100%;
   pointer-events: none;
 }
-
 /* Full-area invisible button */
 .overlay-audio {
   position: absolute; inset: 0;
@@ -63,7 +59,6 @@
   pointer-events: none;
   background-color: #ffffff96;
   padding: 0.5rem 1rem;
-
   display: flex;
   justify-content: center;
   border-radius: 99px;

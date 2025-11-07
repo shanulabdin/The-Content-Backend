@@ -6,13 +6,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body{
   background-color: #09151e;
   font-family: "Poppins", sans-serif;
   padding: 10px;
 }
-
 section{
   display: flex;
   align-items: center;

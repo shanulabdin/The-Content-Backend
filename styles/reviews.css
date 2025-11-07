@@ -7,7 +7,6 @@
   padding: 20px 20px;
   max-width: 400px;
   min-width: 350px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +47,6 @@
 .clientRating{
   display: none;
 }
-
 /* Review carousel Animation */
 #reviews-section{
   overflow-x: auto;
@@ -63,7 +61,6 @@
 .card-grp{
   display: flex;
 }
-
 /* Infinite animation carousel */
 .card{
   width: 100%;
